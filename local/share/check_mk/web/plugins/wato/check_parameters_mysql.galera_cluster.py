@@ -1,5 +1,20 @@
 #!/usr/bin/env python
 
+from cmk.gui.i18n import _
+from cmk.gui.valuespec import (
+    Dictionary,
+    Tuple,
+    Float,
+    TextUnicode,
+    Integer,
+)
+from cmk.gui.wato import (
+    subgroup_applications,
+)
+from cmk.gui.plugins.wato.utils import (
+    register_check_parameters,
+)
+
 
 # MySQL Galera Replication Health (mysql.galera_cluster_repl_health)
 register_check_parameters(
